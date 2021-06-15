@@ -9,35 +9,6 @@ class ShopsProvider with ChangeNotifier {
   final CollectionReference shopsCollection =
       FirebaseFirestore.instance.collection('Shops');
   DatabaseReference dbRef = FirebaseDatabase.instance.reference();
-  // List<ShopModel> shopData = List();
-
-  // List<ShopModel> get shops {
-  //   print("getting shops");
-  //   dbRef.child('Shops').once().then((DataSnapshot snap) {
-  //     shopData.clear();
-  //     var data = snap.value;
-  //     print("Hellooooo" + data.toString());
-  //     data.forEach((key, value) {
-  //       ShopModel shop = new ShopModel(
-  //         shopId: value["shopId"],
-  //         description: value["description"],
-  //         gstNumber: value["gstNumber"],
-  //         imageUrl: value["imageUrl"],
-  //         name: value["name"],
-  //         panNumber: value["panNumber"],
-  //       );
-
-  //       shopData.add(shop);
-  //     });
-  //   });
-  //   print("shops returned");
-  //   print("hiiiiii" + shopData.toString());
-  //   return shopData.toList();
-  // }
-
-  // Stream<List<ShopModel>> get shop {
-  //   return [...shopsFromSnapShot];
-  // }
 
   Future<String> addShop(
       {String id,
