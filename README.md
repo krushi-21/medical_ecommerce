@@ -6,6 +6,6 @@ A new Flutter project.
 
 ## Todos
 
-    Add Provider to check the Data Connection status.
-    Add order service.
+   - Add Provider to check the Data Connection status.
+   - Add order service.
 
